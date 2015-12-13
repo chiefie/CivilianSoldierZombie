@@ -1,0 +1,82 @@
+main {
+	height: 500px;
+}
+
+#reset {
+	display: none;
+}
+
+#status,
+#timer {
+	text-align: center;
+}
+
+#board {
+	height: 100%;
+	display: flex;
+}
+
+.shore {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	width: 140px;
+	background-color: #44ee44;
+}
+
+.river {
+	display: flex;
+	flex-direction: column;
+	width: calc(100vw - 280px);
+	background-color: #3333ee;
+}
+
+#boatContainer {
+	width: 340px;
+	height: 150px;
+	margin: auto 0;
+}
+
+#boatContainer.source {
+	align-self: flex-start;
+}
+
+#boatContainer.destination {
+	align-self: flex-end;
+}
+
+#boatSeat {
+	height: 100px;
+	width: 100px;
+	margin: auto;
+}
+
+#boat {
+	border-top: 50px solid red;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	height: 0;
+	width: 200px;
+	cursor: pointer;
+}
+
+.character {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	line-height: 100px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.civilian {
+	background-color: #fa89de;
+}
+
+.soldier {
+	background-color: #893206;
+}
+
+.zombie {
+	background-color: #243511;
+}
